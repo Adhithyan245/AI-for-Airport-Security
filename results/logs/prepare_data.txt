@@ -1,0 +1,28 @@
+images: 32000  bags: 16000
+
+class balance (image level): {'safe': 22400, 'dangerous': 9600}
+
+threat classes (boxes, original DvXray label): {'Lighter': 767, 'Saw_blade': 753, 'Hammer': 749, 'Wrench': 729, 'Knife': 727, 'Battery': 726, 'Gun': 723, 'Bat': 714, 'Pliers': 712, 'Pressure_vessel': 699, 'Screwdriver': 690, 'Scissors': 690, 'Dart': 660, 'Fireworks': 658, 'Razor_blade': 586}
+
+threat classes (boxes, unified label): {'knife_cutter': 2066, 'lighter': 767, 'hammer': 749, 'wrench': 729, 'battery_powerbank': 726, 'firearm': 723, 'baton': 714, 'pliers': 712, 'sprayer': 699, 'screwdriver': 690, 'scissors': 690, 'dart': 660, 'fireworks': 658}
+
+images in positive/ folder with no box (labelled safe by the box rule): 400
+
+official MANIFEST split: 5391 of 16000 bags have their two views in different splits
+
+-> official split rejected; building pair-grouped 70/15/15
+
+pairs of images by pHash Hamming distance (0..64, nonzero): {0: 4, 26: 1, 32: 1, 36: 2, 38: 2, 40: 2, 44: 1, 46: 6, 48: 8, 50: 8, 52: 8, 54: 40, 56: 59, 58: 98, 60: 136, 62: 192, 64: 339}
+
+duplicate clusters with conflicting labels: 0
+
+bag groups: 15990  largest group: 2 bags  groups merging >1 bag: 10
+
+duplicates removed: 13 (of 32000); by split: {'train': 11, 'test': 2}
+
+ASSERT OK: zero cross-split overlap (file names, bags, pHash <= 44 bits)
+
+final split: {'train': {'images': 22389, 'bags': 11198, 'dangerous': 6711, 'safe': 15678}, 'val': {'images': 4800, 'bags': 2400, 'dangerous': 1441, 'safe': 3359}, 'test': {'images': 4798, 'bags': 2399, 'dangerous': 1442, 'safe': 3356}}
+
+CPU subsample: {'train': {'images': 400, 'bags': 200, 'dangerous': 120, 'safe': 280}, 'val': {'images': 200, 'bags': 100, 'dangerous': 60, 'safe': 140}, 'test': {'images': 800, 'bags': 400, 'dangerous': 241, 'safe': 559}}
+

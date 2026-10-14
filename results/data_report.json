@@ -1,0 +1,111 @@
+{
+  "n_images": 32000,
+  "n_bags": 16000,
+  "class_balance": {
+    "safe": 22400,
+    "dangerous": 9600
+  },
+  "threat_boxes_original": {
+    "Lighter": 767,
+    "Saw_blade": 753,
+    "Hammer": 749,
+    "Wrench": 729,
+    "Knife": 727,
+    "Battery": 726,
+    "Gun": 723,
+    "Bat": 714,
+    "Pliers": 712,
+    "Pressure_vessel": 699,
+    "Screwdriver": 690,
+    "Scissors": 690,
+    "Dart": 660,
+    "Fireworks": 658,
+    "Razor_blade": 586
+  },
+  "threat_boxes_unified": {
+    "knife_cutter": 2066,
+    "lighter": 767,
+    "hammer": 749,
+    "wrench": 729,
+    "battery_powerbank": 726,
+    "firearm": 723,
+    "baton": 714,
+    "pliers": 712,
+    "sprayer": 699,
+    "screwdriver": 690,
+    "scissors": 690,
+    "dart": 660,
+    "fireworks": 658
+  },
+  "positive_folder_images_without_boxes": 400,
+  "official_split_bags_broken": 5391,
+  "phash_pair_distance_hist_0_64": {
+    "0": 4,
+    "26": 1,
+    "32": 1,
+    "36": 2,
+    "38": 2,
+    "40": 2,
+    "44": 1,
+    "46": 6,
+    "48": 8,
+    "50": 8,
+    "52": 8,
+    "54": 40,
+    "56": 59,
+    "58": 98,
+    "60": 136,
+    "62": 192,
+    "64": 339
+  },
+  "dedup_threshold_bits": 44,
+  "dup_clusters_with_conflicting_labels": 0,
+  "n_bag_groups": 15990,
+  "largest_bag_group": 2,
+  "duplicates_removed": 13,
+  "duplicates_removed_by_split": {
+    "train": 11,
+    "test": 2
+  },
+  "cross_split_overlap": 0,
+  "split": {
+    "train": {
+      "images": 22389,
+      "bags": 11198,
+      "dangerous": 6711,
+      "safe": 15678
+    },
+    "val": {
+      "images": 4800,
+      "bags": 2400,
+      "dangerous": 1441,
+      "safe": 3359
+    },
+    "test": {
+      "images": 4798,
+      "bags": 2399,
+      "dangerous": 1442,
+      "safe": 3356
+    }
+  },
+  "cpu_subsample": {
+    "train": {
+      "images": 400,
+      "bags": 200,
+      "dangerous": 120,
+      "safe": 280
+    },
+    "val": {
+      "images": 200,
+      "bags": 100,
+      "dangerous": 60,
+      "safe": 140
+    },
+    "test": {
+      "images": 800,
+      "bags": 400,
+      "dangerous": 241,
+      "safe": 559
+    }
+  }
+}

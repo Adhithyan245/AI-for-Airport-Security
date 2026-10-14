@@ -1,0 +1,16 @@
+images: 32000  bags: 16000
+
+class balance (image level): {'safe': 22400, 'dangerous': 9600}
+
+threat classes (boxes, original DvXray label): {'Lighter': 767, 'Saw_blade': 753, 'Hammer': 749, 'Wrench': 729, 'Knife': 727, 'Battery': 726, 'Gun': 723, 'Bat': 714, 'Pliers': 712, 'Pressure_vessel': 699, 'Screwdriver': 690, 'Scissors': 690, 'Dart': 660, 'Fireworks': 658, 'Razor_blade': 586}
+
+threat classes (boxes, unified label): {'knife_cutter': 2066, 'lighter': 767, 'hammer': 749, 'wrench': 729, 'battery_powerbank': 726, 'firearm': 723, 'baton': 714, 'pliers': 712, 'sprayer': 699, 'screwdriver': 690, 'scissors': 690, 'dart': 660, 'fireworks': 658}
+
+images in positive/ folder with no box (labelled safe by the box rule): 400
+
+official MANIFEST split: 5391 of 16000 bags have their two views in different splits
+
+-> official split rejected; building pair-grouped 70/15/15
+
+pairs of images by pHash Hamming distance (0..64, nonzero): {0: 4, 26: 1, 32: 1, 36: 2, 38: 2, 40: 2, 44: 1, 46: 6, 48: 8, 50: 8, 52: 8, 54: 40, 56: 59, 58: 98, 60: 136, 62: 192, 64: 339}
+

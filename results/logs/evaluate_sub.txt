@@ -1,0 +1,403 @@
+saved test predictions for baseline_sub
+
+saved test predictions for tuned_sub
+
+{
+
+  "split": "sub",
+
+  "n_test_images": 800,
+
+  "n_test_bags": 400,
+
+  "n_test_dangerous": 241,
+
+  "decision_threshold": 0.5,
+
+  "bootstrap": {
+
+    "n_resamples": 2000,
+
+    "unit": "bag (both views resampled together)",
+
+    "ci": "percentile 95%"
+
+  },
+
+  "models": {
+
+    "baseline": {
+
+      "accuracy": 0.7525,
+
+      "precision": 0.5544303797468354,
+
+      "threat_recall": 0.9087136929460581,
+
+      "f1": 0.6886792452830188,
+
+      "auroc": 0.890839451005426,
+
+      "false_alarm_rate": 0.3148479427549195,
+
+      "confusion_matrix": {
+
+        "tn": 383,
+
+        "fp": 176,
+
+        "fn": 22,
+
+        "tp": 219
+
+      },
+
+      "ci95": {
+
+        "accuracy": [
+
+          0.71875,
+
+          0.785
+
+        ],
+
+        "threat_recall": [
+
+          0.8691704820899543,
+
+          0.9469395485466914
+
+        ],
+
+        "precision": [
+
+          0.49242230983302415,
+
+          0.6140350877192983
+
+        ],
+
+        "f1": [
+
+          0.6388877742108079,
+
+          0.7358510985869475
+
+        ],
+
+        "auroc": [
+
+          0.8646219668450122,
+
+          0.9144086892855365
+
+        ]
+
+      },
+
+      "ci95_n_valid_resamples": 2000,
+
+      "best_epoch": 4,
+
+      "best_val_auroc": 0.8854761904761905,
+
+      "threshold_analysis": {
+
+        "recall_90": {
+
+          "test_roc_operating_point": {
+
+            "threshold": 0.6768990159034729,
+
+            "threat_recall": 0.9004149377593361,
+
+            "false_alarm_rate": 0.2558139534883721
+
+          },
+
+          "val_chosen_threshold": {
+
+            "threshold": 0.3638821542263031,
+
+            "test_threat_recall": 0.9253112033195021,
+
+            "test_false_alarm_rate": 0.35241502683363146
+
+          }
+
+        },
+
+        "recall_95": {
+
+          "test_roc_operating_point": {
+
+            "threshold": 0.2078453749418258,
+
+            "threat_recall": 0.950207468879668,
+
+            "false_alarm_rate": 0.4150268336314848
+
+          },
+
+          "val_chosen_threshold": {
+
+            "threshold": 0.27417880296707153,
+
+            "test_threat_recall": 0.946058091286307,
+
+            "test_false_alarm_rate": 0.39177101967799643
+
+          }
+
+        }
+
+      },
+
+      "sensitivity_excluding_unboxed_positive_folder_images": {
+
+        "n_excluded": 9,
+
+        "accuracy": 0.7610619469026548,
+
+        "precision": 0.5673575129533679,
+
+        "threat_recall": 0.9087136929460581,
+
+        "f1": 0.6985645933014354,
+
+        "auroc": 0.8982874387023765,
+
+        "false_alarm_rate": 0.30363636363636365,
+
+        "confusion_matrix": {
+
+          "tn": 383,
+
+          "fp": 167,
+
+          "fn": 22,
+
+          "tp": 219
+
+        }
+
+      }
+
+    },
+
+    "tuned": {
+
+      "accuracy": 0.69875,
+
+      "precision": 0.0,
+
+      "threat_recall": 0.0,
+
+      "f1": 0.0,
+
+      "auroc": 0.7252948730320148,
+
+      "false_alarm_rate": 0.0,
+
+      "confusion_matrix": {
+
+        "tn": 559,
+
+        "fp": 0,
+
+        "fn": 241,
+
+        "tp": 0
+
+      },
+
+      "ci95": {
+
+        "accuracy": [
+
+          0.655,
+
+          0.74375
+
+        ],
+
+        "threat_recall": [
+
+          0.0,
+
+          0.0
+
+        ],
+
+        "precision": [
+
+          0.0,
+
+          0.0
+
+        ],
+
+        "f1": [
+
+          0.0,
+
+          0.0
+
+        ],
+
+        "auroc": [
+
+          0.6776270116672825,
+
+          0.7694394274291504
+
+        ]
+
+      },
+
+      "ci95_n_valid_resamples": 2000,
+
+      "best_epoch": 3,
+
+      "best_val_auroc": 0.67625,
+
+      "threshold_analysis": {
+
+        "recall_90": {
+
+          "test_roc_operating_point": {
+
+            "threshold": 0.3358952403068542,
+
+            "threat_recall": 0.9004149377593361,
+
+            "false_alarm_rate": 0.6440071556350626
+
+          },
+
+          "val_chosen_threshold": {
+
+            "threshold": 0.3332861661911011,
+
+            "test_threat_recall": 0.9543568464730291,
+
+            "test_false_alarm_rate": 0.7602862254025045
+
+          }
+
+        },
+
+        "recall_95": {
+
+          "test_roc_operating_point": {
+
+            "threshold": 0.3332861661911011,
+
+            "threat_recall": 0.9543568464730291,
+
+            "false_alarm_rate": 0.7602862254025045
+
+          },
+
+          "val_chosen_threshold": {
+
+            "threshold": 0.332852303981781,
+
+            "test_threat_recall": 0.9875518672199171,
+
+            "test_false_alarm_rate": 0.8085867620751341
+
+          }
+
+        }
+
+      },
+
+      "sensitivity_excluding_unboxed_positive_folder_images": {
+
+        "n_excluded": 9,
+
+        "accuracy": 0.695322376738306,
+
+        "precision": 0.0,
+
+        "threat_recall": 0.0,
+
+        "f1": 0.0,
+
+        "auroc": 0.7311278762731045,
+
+        "false_alarm_rate": 0.0,
+
+        "confusion_matrix": {
+
+          "tn": 550,
+
+          "fp": 0,
+
+          "fn": 241,
+
+          "tp": 0
+
+        }
+
+      }
+
+    }
+
+  },
+
+  "paired_delta_tuned_minus_baseline_ci95": {
+
+    "auroc": {
+
+      "point": -0.16554457797341127,
+
+      "ci95": [
+
+        -0.21456499371867482,
+
+        -0.11753679225137074
+
+      ]
+
+    },
+
+    "threat_recall": {
+
+      "point": -0.9087136929460581,
+
+      "ci95": [
+
+        -0.9469395485466914,
+
+        -0.8691704820899544
+
+      ]
+
+    },
+
+    "accuracy": {
+
+      "point": -0.053749999999999964,
+
+      "ci95": [
+
+        -0.11499999999999999,
+
+        0.007499999999999954
+
+      ]
+
+    }
+
+  }
+
+}
+
+
+real	5m52.037s
+user	0m0.030s
+sys	0m0.109s
+exit=0

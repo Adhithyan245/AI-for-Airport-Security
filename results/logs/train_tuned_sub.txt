@@ -1,0 +1,65 @@
+[tuned_sub] device=cpu torch=2.12.0+cpu
+
+train 400 imgs (120 dangerous), val 200 imgs (60 dangerous)
+
+class weights [safe, dangerous]: [0.7142857313156128, 1.6666666269302368]
+
+  epoch 1 step 10/50 loss 0.7758 (66s)
+
+  epoch 1 step 20/50 loss 0.7587 (118s)
+
+  epoch 1 step 30/50 loss 0.7464 (170s)
+
+  epoch 1 step 40/50 loss 0.7511 (227s)
+
+  epoch 1 step 50/50 loss 0.7591 (266s)
+
+[tuned_sub] {"epoch": 1, "train_loss": 0.7590735054016113, "val_auroc": 0.6675595238095238, "val_acc@0.5": 0.7, "val_bce": 0.6406567914015194, "lr": 0.0004, "epoch_seconds": 295.58801436424255}
+
+  -> new best val AUROC, checkpoint saved
+
+  epoch 2 step 10/50 loss 0.7225 (47s)
+
+  epoch 2 step 20/50 loss 0.7290 (84s)
+
+  epoch 2 step 30/50 loss 0.7266 (119s)
+
+  epoch 2 step 40/50 loss 0.7244 (160s)
+
+  epoch 2 step 50/50 loss 0.7226 (201s)
+
+[tuned_sub] {"epoch": 2, "train_loss": 0.7226335525512695, "val_auroc": 0.6490476190476191, "val_acc@0.5": 0.3, "val_bce": 0.790877277467338, "lr": 0.0004, "epoch_seconds": 229.03439688682556}
+
+  epoch 3 step 10/50 loss 0.7387 (39s)
+
+  epoch 3 step 20/50 loss 0.7097 (84s)
+
+  epoch 3 step 30/50 loss 0.7147 (132s)
+
+  epoch 3 step 40/50 loss 0.7099 (177s)
+
+  epoch 3 step 50/50 loss 0.7015 (224s)
+
+[tuned_sub] {"epoch": 3, "train_loss": 0.7014570832252502, "val_auroc": 0.67625, "val_acc@0.5": 0.7, "val_bce": 0.6033681846112057, "lr": 0.00024, "epoch_seconds": 253.37056827545166}
+
+  -> new best val AUROC, checkpoint saved
+
+  epoch 4 step 10/50 loss 0.6863 (47s)
+
+  epoch 4 step 20/50 loss 0.6929 (89s)
+
+  epoch 4 step 30/50 loss 0.6935 (125s)
+
+  epoch 4 step 40/50 loss 0.7089 (162s)
+
+  epoch 4 step 50/50 loss 0.7065 (202s)
+
+[tuned_sub] {"epoch": 4, "train_loss": 0.7065011096000672, "val_auroc": 0.6644642857142856, "val_acc@0.5": 0.64, "val_bce": 0.6277111247355147, "lr": 0.00024, "epoch_seconds": 237.27874970436096}
+
+[tuned_sub] done. best epoch 3 val AUROC 0.6763
+
+
+real	17m22.419s
+user	0m0.047s
+sys	0m0.093s
+exit=0

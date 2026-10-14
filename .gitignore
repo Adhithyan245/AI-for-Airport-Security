@@ -1,7 +1,18 @@
-# Python
+# Dataset: academic use only, redistribution forbidden. Never commit images.
+xray_baggage/
+xray_sixray/
+*.png
+*.jpg
+!results/*.png
+
+# Model weights and caches
+checkpoints/
+*.pt
+*.pth
 __pycache__/
+.ipynb_checkpoints/
+*.log
+
+# Python
 *.py[cod]
 *$py.class
-
-# Jupyter Notebook
-.ipynb_checkpoints

@@ -1,0 +1,13 @@
+SIXray subset images by split: {'train': 11638, 'val': 1662, 'test': 831}  without boxes: 119
+
+evaluating on 829 boxed SIXray test images; classes: {'Gun': 288, 'Knife': 111, 'Wrench': 214, 'Pliers': 387, 'Scissors': 97}
+
+baseline {"0.5": [0.9963811821471653, [0.991556091676719, 1.0]], "dvxray_val_recall_90": [0.9987937273823885, [0.9963811821471653, 1.0]], "dvxray_val_recall_95": [0.9987937273823885, [0.9963811821471653, 1.0]]}
+
+tuned {"0.5": [0.0012062726176115801, [0.0, 0.0036188178528347406]], "dvxray_val_recall_90": [1.0, [1.0, 1.0]], "dvxray_val_recall_95": [1.0, [1.0, 1.0]]}
+
+
+real	5m34.309s
+user	0m0.015s
+sys	0m0.031s
+exit=0

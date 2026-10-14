@@ -1,0 +1,67 @@
+[baseline_sub] device=cpu torch=2.12.0+cpu
+
+train 400 imgs (120 dangerous), val 200 imgs (60 dangerous)
+
+class weights [safe, dangerous]: [0.7142857313156128, 1.6666666269302368]
+
+  epoch 1 step 10/50 loss 0.7180 (81s)
+
+  epoch 1 step 20/50 loss 0.7006 (147s)
+
+  epoch 1 step 30/50 loss 0.6752 (205s)
+
+  epoch 1 step 40/50 loss 0.5977 (273s)
+
+  epoch 1 step 50/50 loss 0.5663 (356s)
+
+[baseline_sub] {"epoch": 1, "train_loss": 0.5663413658738137, "val_auroc": 0.8375, "val_acc@0.5": 0.465, "val_bce": 0.9893763884248645, "lr": 0.0001, "epoch_seconds": 409.3633270263672}
+
+  -> new best val AUROC, checkpoint saved
+
+  epoch 2 step 10/50 loss 0.5875 (84s)
+
+  epoch 2 step 20/50 loss 0.4694 (146s)
+
+  epoch 2 step 30/50 loss 0.4049 (217s)
+
+  epoch 2 step 40/50 loss 0.3928 (305s)
+
+  epoch 2 step 50/50 loss 0.3681 (385s)
+
+[baseline_sub] {"epoch": 2, "train_loss": 0.3680590457469225, "val_auroc": 0.8810714285714286, "val_acc@0.5": 0.81, "val_bce": 0.45618642361397604, "lr": 0.0001, "epoch_seconds": 437.91775155067444}
+
+  -> new best val AUROC, checkpoint saved
+
+  epoch 3 step 10/50 loss 0.2422 (84s)
+
+  epoch 3 step 20/50 loss 0.2608 (153s)
+
+  epoch 3 step 30/50 loss 0.2369 (223s)
+
+  epoch 3 step 40/50 loss 0.2511 (287s)
+
+  epoch 3 step 50/50 loss 0.2877 (413s)
+
+[baseline_sub] {"epoch": 3, "train_loss": 0.28772639475762846, "val_auroc": 0.8648809523809524, "val_acc@0.5": 0.665, "val_bce": 0.6721859473521604, "lr": 0.0001, "epoch_seconds": 464.8166742324829}
+
+  epoch 4 step 10/50 loss 0.2716 (71s)
+
+  epoch 4 step 20/50 loss 0.2396 (137s)
+
+  epoch 4 step 30/50 loss 0.2019 (214s)
+
+  epoch 4 step 40/50 loss 0.1810 (295s)
+
+  epoch 4 step 50/50 loss 0.1542 (365s)
+
+[baseline_sub] {"epoch": 4, "train_loss": 0.15420693972148, "val_auroc": 0.8854761904761905, "val_acc@0.5": 0.74, "val_bce": 0.7414600184462151, "lr": 0.0001, "epoch_seconds": 426.16611409187317}
+
+  -> new best val AUROC, checkpoint saved
+
+[baseline_sub] done. best epoch 4 val AUROC 0.8855
+
+
+real	29m18.101s
+user	0m0.015s
+sys	0m0.047s
+exit=0
